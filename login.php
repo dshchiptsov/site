@@ -1,4 +1,4 @@
-?php
+<?php
 session_start();
 ?>
 
@@ -6,7 +6,7 @@ session_start();
 <?php include("includes/header.php"); ?>
 
 <?php
-$connection = @mysqli_connect('localhost', root, '', site) or die("Íåò ñîåäèíåíèÿ ñ ÁÄ");
+$connection = @mysqli_connect('localhost', root, '', site) or die("ÃÃ¥Ã² Ã±Ã®Ã¥Ã¤Ã¨Ã­Ã¥Ã­Ã¨Ã¿ Ã± ÃÃ„");
 if(isset($_SESSION["session_username"])){
 // echo "Session is set"; // for testing purposes
 header("Location: intropage.php");
